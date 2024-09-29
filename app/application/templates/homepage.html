@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RobLewisDevOps Homepage</title>
+    <style> body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      } header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+      } header .logo {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      } nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0; padding: 0;
+      } nav ul li {
+        margin: 0 15px;
+      } nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      } nav ul li a:hover {
+        text-decoration: underline;
+      } .banner {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #f4f4f4;
+      } .banner h1 {
+        font-size: 48px;
+      margin: 0;
+      } .banner p {
+        font-size: 20px;
+        margin: 10px 0 0;
+      } footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      } 
+    </style>
+  </head> 
+  <body>
+    <header>
+      <a href="/" class="logo">RobLewisDevOps</a>
+      <nav>
+        <ul>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+      <h1>Welcome to Rob Lewis DevOps</h1>
+      <p>Explore my work, get in touch, and learn more about me.</p>
+      <br><br>
+      <h3>{{ inspirational_quote }}</h3>
+    </section> <footer> &copy; 2024 Robert Lewis | All Rights Reserved </footer>
+  </body>
+</html>
