@@ -6,6 +6,6 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # Expose the correct port
-EXPOSE 5000
+EXPOSE 5001
 # Entry point
 ENTRYPOINT ["python", "app.py"]
