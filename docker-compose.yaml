@@ -1,13 +1,15 @@
 version: "3"
 
 services:
-  app:
-    container_name: application
-    image: application:latest
+  homepage:
+    container_name: homepage
+    image: homepage:latest
     build: ./app
     ports:
-    - target: 5000
+    - target: 5001
       protocol: tcp
+    environment:
+      - BASE_URL=http://localhost:8081
 
   nginx:
     image: nginx:latest
