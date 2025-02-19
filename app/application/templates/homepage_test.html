@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisoners' Dilemma Tournament</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background: linear-gradient(135deg, #1e1e2f, #3a3a6e); */
+            background: #0f0b29;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* background: rgba(255, 255, 255, 0.1); */
+            /* background-image: linear-gradient(130deg,#270437,#120437); */
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f8f8ff;
+            text-decoration: none;
+        }
+
+        header .logo:hover {
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Container */
+        .container {
+            /* background: rgba(255, 255, 255, 0.1); */
+            background: linear-gradient(135deg, #1e1e2f, #0f0b29);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            margin-top: 100px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 72px;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            background-image: linear-gradient(45deg, #ff512f, #dd2476);
+            color: transparent;
+            background-clip: text;
+            font-family: Play; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: 700; 
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ff9400;
+        }
+
+        /* Dropdown */
+        .dropdown select {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            background: #222;
+            color: white;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .dropdown select:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+
+        /* Tournament Description */
+        #description {
+            font-size: 16px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        /* Play Button */
+        .play-btn {
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+        }
+
+        .play-btn:disabled {
+            background: #444;
+            cursor: not-allowed;
+        }
+
+        .play-btn:hover:enabled {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ff784e, #e52e9a);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">RobLewisDevOps</a>
+        <nav>
+            <ul>
+                <li><a href="{{ base_url }}/cv">CV</a></li>
+                <li><a href="{{ base_url }}/tournament">Prisoners' Dilemma Tournament</a></li>
+                <li><a href="{{ base_url }}/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>Welcome to Rob Lewis DevOps <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h1>
+        <p>Explore my work, get in touch, and learn more about me.</p>
+    </div>
+
+    <section class="banner">
+        <div class="container">
+            <h3>{{ inspirational_quote }}</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Robert Lewis | All Rights Reserved
+    </footer>
+
+    </script>
+</body>
+</html>

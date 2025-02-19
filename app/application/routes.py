@@ -9,6 +9,6 @@ from application.inspirational_quote import Quotes
 @app.route('/home', methods=['GET'])
 def home():
     if request.method=='GET':
-        return render_template('homepage.html', title='home', inspirational_quote=Quotes().quote, base_url=os.environ.get('BASE_URL'))
+        return render_template('homepage_test.html', title='home', inspirational_quote=Quotes().quote, base_url=os.environ.get('BASE_URL'))
     else:
         return Exception
