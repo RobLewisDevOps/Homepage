@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith - DevOps Engineer</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background: linear-gradient(135deg, #1e1e2f, #3a3a6e); */
+            background: #0f0b29;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* background: rgba(255, 255, 255, 0.1); */
+            /* background-image: linear-gradient(130deg,#270437,#120437); */
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Added to ensure the header stays on top */
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f8f8ff;
+            text-decoration: none;
+        }
+
+        header .logo:hover {
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Container */
+        .container {
+            /* background: rgba(255, 255, 255, 0.1); */
+            background: linear-gradient(135deg, #1e1e2f, #0f0b29);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            margin-top: 100px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 72px;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            background-image: linear-gradient(45deg, #ff512f, #dd2476);
+            color: transparent;
+            background-clip: text;
+            font-family: Play; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: 700; 
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ddd;
+            font-family: Play;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ff9400;
+            font-family: Play; 
+        }
+
+        /* Dropdown */
+        .dropdown select {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            background: #222;
+            color: white;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .dropdown select:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+
+        /* Tournament Description */
+        #description {
+            font-size: 16px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        /* Play Button */
+        .play-btn {
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+        }
+
+        .play-btn:disabled {
+            background: #444;
+            cursor: not-allowed;
+        }
+
+        .play-btn:hover:enabled {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ff784e, #e52e9a);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(80px);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            color: white;
+            font-size: 10px
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <a href="/home" class="logo">RobLewisDevOps</a>
+    <nav>
+        <ul>
+            <li><a href="{{ base_url }}/cv">CV</a></li>
+            <li><a href="{{ base_url }}/tournament">Prisoners' Dilemma Tournament</a></li>
+            <li><a href="{{ base_url }}/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <h1>John Smith <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h1>
+        <h2>DevOps Engineer <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h2>
+        <section>
+            <h3>Profile <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h3>
+            <p>John Smith is a DevOps engineer with 3 and a half years’ experience delivering cloud infrastructure, developing applications, and designing automation solutions using AWS, Docker, Kubernetes, Jenkins, Terraform, and scripting in Python, Go, Groovy, and Bash.</p>
+        </section>
+        <br>
+        <section>
+            <h3>Experience <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h3>
+            <p><strong>DevOps Consultant – Volvo (Nov 2022 – Present)</strong></p>
+            <ul>
+                <li>Senior engineer across the tech stack in a DevOps team that develops and maintains tooling for 90+ customer teams.</li>
+                <li>Responsibilities include tech design and delivery, team point of support, and covering running ceremonies.</li>
+                <li>Lead Volvo internal team on soft skills training, researching, gathering, and advocating courses on soft skills.</li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3>Qualifications and Education <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h3>
+            <ul>
+                <li>Certified Kubernetes Administrator (CKA) – 2024</li>
+                <li>AWS Certified Developer – 2023</li>
+                <li>AWS Cloud Practitioner – 2022</li>
+                <li>Philosophy BA Hons (University of Bath) – 2014–2017</li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3>Skills <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" /></h3>
+            <ul>
+                <li><strong>Public Cloud:</strong> AWS, GCP</li>
+                <li><strong>Languages:</strong> Python, Groovy, Bash, Go</li>
+                <li><strong>Containerisation:</strong> Docker, Kubernetes, Helm</li>
+                <li><strong>SCM:</strong> Bitbucket, GitHub</li>
+                <li><strong>CI/CD:</strong> Jenkins</li>
+                <li><strong>Infrastructure as Code:</strong> Terraform</li>
+                <li><strong>Methodologies:</strong> Agile, Kanban</li>
+                <li><strong>Logging and Monitoring:</strong> CloudWatch, ELK, Splunk</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 John Smith | All Rights Reserved
+    </footer>
+</body>
+</html>

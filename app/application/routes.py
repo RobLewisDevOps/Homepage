@@ -12,3 +12,11 @@ def home():
         return render_template('homepage_test.html', title='home', inspirational_quote=Quotes().quote, base_url=os.environ.get('BASE_URL'))
     else:
         return Exception
+    
+
+@app.route('/cv', methods=['GET'])
+def cv():
+    if request.method=='GET':
+        return render_template('cv.html', title='cv')
+    else:
+        return Exception

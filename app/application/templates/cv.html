@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob Lewis - DevOps Engineer CV</title>
+  <link href="https://fonts.googleapis.com/css?family=Play|Poppins" rel="stylesheet" />
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0b29;
+      color: white;
+      text-align: left;
+      padding-top: 70px; /* space for fixed header */
+      margin-bottom: 20px; /* avoid footer overlap */
+    }
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #f8f8ff;
+      text-decoration: none;
+    }
+    header .logo:hover {
+      color: #ffcc00;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    /* Main Container */
+    .container {
+      background: linear-gradient(135deg, #1e1e2f, #0f0b29);
+      backdrop-filter: blur(15px);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 1000px;
+      margin: 30px auto 60px auto;
+    }
+    /* Title and Contact Info */
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .title h1 {
+      font-size: 72px;
+      margin-bottom: 10px;
+      background-image: linear-gradient(45deg, #ff512f, #dd2476);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-family: 'Play', sans-serif;
+      font-weight: 700;
+    }
+    .title h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ddd;
+      font-family: 'Play', sans-serif;
+    }
+    .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 16px;
+      color: #ccc;
+    }
+    .contact-info a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    /* Section Styling */
+    section {
+      margin-bottom: 30px;
+    }
+    section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ff9400;
+      font-family: 'Play', sans-serif;
+    }
+    section p,
+    section ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    section ul li {
+      margin-bottom: 10px;
+    }
+    /* Job Header & Subsection Titles */
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+    .job-header span {
+      font-size: 14px;
+      color: #aaa;
+    }
+    .subsection-title {
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    hr.section-line {
+      border: none;
+      border-top: 1px solid #555;
+      margin: 20px 0;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(80px);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      color: white;
+      font-size: 10px;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 30px;
+      }
+      .title h1 {
+        font-size: 48px;
+      }
+      .title h2 {
+        font-size: 20px;
+      }
+      section h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <a href="/home" class="logo">RobLewisDevOps</a>
+    <nav>
+      <ul>
+        <li><a href="{{ base_url }}/cv">CV</a></li>
+        <li><a href="{{ base_url }}/tournament">Prisoners' Dilemma Tournament</a></li>
+        <li><a href="{{ base_url }}/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Title and Contact Info -->
+  <div class="title">
+    <h1>Rob Lewis</h1>
+    <h2>DevOps Engineer</h2>
+  </div>
+  <div class="contact-info">
+    <a href="mailto:lewisrob124@gmail.com">lewisrob124@gmail.com</a> &nbsp;|&nbsp;
+    <a href="https://www.roblewisdevops.click/home" target="_blank">www.roblewisdevops.click</a> &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/rob-lewis-fph" target="_blank">linkedin.com/in/rob-lewis-fph</a>
+  </div>
+  <!-- Main CV Container -->
+  <div class="container">
+    <!-- Profile Section -->
+    <section id="profile">
+      <h3>Profile</h3>
+      <p>
+        Rob Lewis is a DevOps engineer with 4 years’ experience delivering cloud infrastructure, developing applications, and designing automation solutions using AWS, Docker, Kubernetes, Jenkins, Terraform, and scripting in Python, Go, Groovy, and Bash.
+      </p>
+    </section>
+    <hr class="section-line">
+    <!-- Experience Section -->
+    <section id="experience">
+      <h3>Experience</h3>
+      <!-- DevOps Consultant – Capgemini -->
+      <div class="job">
+        <div class="job-header">
+          <strong>DevOps Consultant – Capgemini</strong>
+          <span>November 2022 – Present</span>
+        </div>
+        <div class="subsection">
+          <p class="subsection-title">DevOps and Automation Engineer</p>
+          <ul>
+            <li>Senior engineer across the tech stack in a DevOps team that develops and maintains tooling for 90+ customer teams.</li>
+            <li>Responsibilities include tech design and delivery, team point of support, and covering running ceremonies.</li>
+            <li>Lead Capgemini internal team on soft skills training, researching, gathering, and advocating courses on soft skills.</li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <p class="subsection-title">Platform Infrastructure Engineer</p>
+          <ul>
+            <li>Platform engineer delivering infrastructure and bespoke networking solutions for over 100 teams.</li>
+            <li>Responsibilities include liaising with customers and architects, scripting and deploying infrastructure-as-code, testing networking behavior, and troubleshooting issues effectively.</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <!-- DevOps Consultant – QA Ltd -->
+      <div class="job">
+        <div class="job-header">
+          <strong>DevOps Consultant – QA Ltd</strong>
+          <span>February 2021 – November 2022</span>
+        </div>
+        <div class="subsection">
+          <p class="subsection-title">Platform Infrastructure Engineer</p>
+          <ul>
+            <li>Implemented AWS networking designs for VPC, EC2, Route53, S3, and troubleshoot networking issues.</li>
+            <li>Created and maintained documentation, provided a point of contact for platform customers, and supported junior team members.</li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <p class="subsection-title">Junior DevOps Engineer</p>
+          <ul>
+            <li>Designed and developed automated pipelines to provide CI/CD capability for an app-development team, including logic to deliver Slack messages with build outcomes.</li>
+            <li>Used tiered environments to test changes, ensuring only robust features were pushed to production environments.</li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <p class="subsection-title">Platform Service-Desk Engineer</p>
+          <ul>
+            <li>Used multiple AWS accounts and region-based services effectively to provide support on infrastructure issues.</li>
+            <li>Renewed authentication certificates in HashiCorp Vault using the CLI to read and write to the Vault server.</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <!-- Dashboard Developer – Freelance -->
+      <div class="job">
+        <div class="job-header">
+          <strong>Dashboard Developer – Freelance</strong>
+          <span>March 2020 – February 2021</span>
+        </div>
+        <ul>
+          <li>Designed and created interactive portfolio tables and charts with PowerBI from time-series price data collected using a bespoke Python web-scraping script and OneDrive database.</li>
+        </ul>
+      </div>
+      <br>
+      <!-- Secretariat Officer – UK Statistic Authority -->
+      <div class="job">
+        <div class="job-header">
+          <strong>Secretariat Officer – UK Statistic Authority</strong>
+          <span>April 2018 – February 2020</span>
+        </div>
+        <p>
+          <em>Regulation Policy Support Officer</em> &nbsp;&nbsp;|&nbsp;&nbsp; <em>Executive Assistant to Director General</em>
+        </p>
+      </div>
+    </section>
+    <hr class="section-line">
+    <!-- Qualifications and Education Section -->
+    <section id="education">
+      <h3>Qualifications and Education</h3>
+      <ul>
+        <li><strong>Certified Kubernetes Administrator (CKA)</strong> – 2024</li>
+        <li><strong>AWS Certified Developer</strong> – 2023</li>
+        <li><strong>AWS Cloud Practitioner</strong> – 2022</li>
+        <li><strong>Philosophy BA Hons</strong> (University of Leeds) – 2014–2017</li>
+      </ul>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>Public Cloud:</strong> AWS, GCP</li>
+        <li><strong>Languages:</strong> Python, Groovy, Bash, Go</li>
+        <li><strong>Containerisation:</strong> Docker, Kubernetes, Helm</li>
+        <li><strong>SCM:</strong> Bitbucket, GitHub</li>
+        <li><strong>CI/CD:</strong> Jenkins</li>
+        <li><strong>Infrastructure as Code:</strong> Terraform</li>
+        <li><strong>Methodologies:</strong> Agile, Kanban</li>
+        <li><strong>Logging and Monitoring:</strong> CloudWatch, ELK, Splunk</li>
+      </ul>
+    </section>
+  </div>
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Rob Lewis | All Rights Reserved
+  </footer>
+</body>
+</html>
